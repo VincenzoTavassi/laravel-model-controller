@@ -1,4 +1,4 @@
-<div class="col">
+<div class="{{Route::current()->getName() == 'homepage' ? 'col' : 'col-12 text-center'}}">
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">{{$movie->title}}</h5>
