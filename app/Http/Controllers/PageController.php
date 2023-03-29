@@ -14,9 +14,9 @@ class PageController extends Controller
         return view('home', compact('movies'));
     }
 
-    public function dettaglio($indice)
+    public function dettaglio($id)
     {
-        $movie = Movie::FindOrFail($indice);
+        $movie = Movie::FindOrFail($id);
         return view('movie-detail', compact('movie'));
     }
 }
